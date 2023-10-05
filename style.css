@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+*{ 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F2F2F2;
+}
+
+/* Main container */
+.contenedor-principal {
+  font-family: 'Roboto', sans-serif;
+  max-width: 375px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  padding: 32px 0;
+}
+
+textarea {
+  height: 120px;
+  border-radius: 16px;
+  border: 2px solid #4F4F4F;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.8px;
+  padding: 16px;
+}
+
+.titulo {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  color: #333333;
+}
+
+.btn-agregar {
+  border-radius: 16px;
+  padding: 8px, 16px, 8px, 16px;
+  height: 45px;
+  background-color: #4F4F4F;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  color: #ffff;
+  cursor: pointer;
+  &:hover {
+    background-color: #333333;
+  }
+}
+
+
+/* Styling the task list */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  width: 100%;
+  background-color: #ffff;
+  border: 2px solid #4F4F4F;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+}
+
+/* Accessibility: High contrast for readability */
+li span {
+  color: #333333;
+  word-wrap: break-word;
+}
+
+/* Button to remove task */
+button.remove {
+  width: 83px;
+  height: 30px;
+  background-color: #E0E0E0;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  padding: 4px, 16px, 4px, 16px;
+  border-radius: 16px;
+  align-self: flex-end;
+  font-size: 18px;
+  color: #4F4F4F;
+}
